@@ -3,7 +3,7 @@ This is the course project for the Getting and Cleaning Data Coursera course (de
 First of all, we need to download the data from [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) and unzip data into your working directory. A full description is available at the site where the data was obtained [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 The R script, run_analysis.R, does the followings:
 1. Load data:
-   -Load test dataset store in table names **test** 
+   - Load test dataset store in table names **test** 
     * read table from "UCI HAR Dataset/test/X_test.txt",  
     * read table from "UCI HAR Dataset/test/Y_test.txt"
     * read table from "UCI HAR Dataset/test/subject_test.txt"
