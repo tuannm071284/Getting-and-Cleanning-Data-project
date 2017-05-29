@@ -14,8 +14,7 @@ The R script, run_analysis.R, does the followings:
     * read table from "UCI HAR Dataset/train/subject_train.txt"
     * Combine three by Columns and store in **train**
   - Combine **test** and **train** by row into one data set called **raw_data_1**
-2. Load activity labels and features:
-  - Load the activity from "UCI HAR Dataset/activity_labels.txt" store in **activityLabels**.
+2. Load features and rename the feature names in raw_data_1:
   - Load features from "UCI HAR Dataset/features.txt" store in **features**. 
 3. Filter out the data
   - Filter the Labels, we just need features which  measurements on the mean and standard deviation then store in **features_filtered**
