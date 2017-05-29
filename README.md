@@ -8,12 +8,12 @@ The R script, run_analysis.R, does the followings:
     * read table from "UCI HAR Dataset/test/Y_test.txt"
     * read table from "UCI HAR Dataset/test/subject_test.txt"
     * Combine three by Columns and store in **test**
-  - Load training dataset store in table names **data_train**
+  - Load training dataset store in table names **train**
     * read table from "UCI HAR Dataset/train/X_train.txt",  
     * read table from "UCI HAR Dataset/train/Y_train.txt"
     * read table from "UCI HAR Dataset/train/subject_train.txt"
-    * Combine three by Columns and store in **data_train**
-  - Combine **data_train** and **data_test** by rows into one data set called **data**
+    * Combine three by Columns and store in **train**
+  - Combine **test** and **train** by row into one data set called **raw_data_1**
 2. Load activity labels and features:
   - Load the activity from "UCI HAR Dataset/activity_labels.txt" store in **activityLabels**.
   - Load features from "UCI HAR Dataset/features.txt" store in **features**. 
