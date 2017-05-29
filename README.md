@@ -14,12 +14,12 @@ The R script, run_analysis.R, does the followings:
     * read table from "UCI HAR Dataset/train/subject_train.txt"
     * Combine three by Columns and store in **train**
   - Combine **test** and **train** by row into one data set called **raw_data_1**
-2. Load features and rename the feature names in raw_data_1:
-  - Load features from "UCI HAR Dataset/features.txt" store in **features**. 
+2. Load feature names and rename the column names (except subject and activity columns) in raw_data_1:
+  - Load features from "UCI HAR Dataset/features.txt" and store in **features**.
+  - Rename the column names (except subject and activity columns) in raw_data_1.
 3. Filter out the data
-  - Filter the Labels, we just need features which  measurements on the mean and standard deviation then store in **features_filtered**
-  - Make a subset data of data with the first colume, the second colume and some features colume in **features_filtered**
-  - Add colume name into data
+  - Filter the labels, we just need features which have measurements on the mean and standard deviation then store in **raw_data_2**
+  - Load features from "UCI HAR Dataset/features.txt" and store in **features**.
 4. "melt" data so that each row is a unique **subject-activity** combination and store in **melted_data**.
 5. Use cast funtion to creates a tidy dataset that consists of the average (mean) value of each variable for each subject and activity pair. The result stored in data which name is **tidy_data**. 
 6. Last step, we wrote the **tidy_data** into file name "**tidy.txt**".
