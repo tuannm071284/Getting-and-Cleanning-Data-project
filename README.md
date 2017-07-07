@@ -19,7 +19,9 @@ The R script, run_analysis.R, does the followings:
   - Rename the column names (except subject and activity columns) in raw_data_1.
 3. Filter out the data
   - Filter the labels, we just need features which have measurements on the mean and standard deviation then store in **raw_data_2**
-  - Load features from "UCI HAR Dataset/features.txt" and store in **features**.
-4. "melt" data so that each row is a unique **subject-activity** combination and store in **melted_data**.
-5. Use cast funtion to creates a tidy dataset that consists of the average (mean) value of each variable for each subject and activity pair. The result stored in data which name is **tidy_data**. 
-6. Last step, we wrote the **tidy_data** into file name "**tidy.txt**".
+  - replace the activity numbers by the activity names.
+  - Create **temp** as an copy of **raw_data_2**.
+  - Create an empty data frame called **tidy**.
+4. "melt" data so that each row is a unique **subject-activity** combination.
+5. Use For loop, group_by & aggregate funtion to create a tidy dataset that consists of the average (mean) value of each variable for each subject and activity pair. The result stored in data which name is **tidy**. 
+6. Last step, we wrote the **tidy** into file name "**tidy.txt**".
